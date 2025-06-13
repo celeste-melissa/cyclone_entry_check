@@ -1,3 +1,5 @@
+# Write code below 💖
+
 # New entry system for "The Cyclone" must check user height and the amount of credits they have
 
 # Get the user's height in feet
@@ -9,12 +11,12 @@ def height_conversion(user_height):
   if 0 < user_height <= 12:
     return user_height * 30.48
   else:
-    return None
+    return 0
 
 # Convert height and validate
 converted_height = float(height_conversion(height))
 
-if converted_height is None:
+if converted_height == 0:
     print("Invalid input. Please enter height in feet (e.g., 5.5).")
 else:
     print("Height:", round(converted_height, 2), "cm")
