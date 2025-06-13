@@ -27,10 +27,12 @@ print("Credits:", credits)
 
 # Check users eligibility to ride
 if converted_height >= 137 and credits >= 10:
-  print("Enjoy the ride!")
-elif credits >= 10 or converted_height < 137:
-  print("You are not tall enough to ride.")
-elif converted_height >= 137 or credits < 10:
-  print("You don't have enough credits.")
+  print("✅ Enjoy the ride!")
+elif converted_height < 137 and credits < 10:
+  print(" ❌ You are not tall enough and you do not have enough credits for this ride.")
+elif converted_height < 137:
+  print("❌ You are not tall enough for this ride.")
+elif credits < 10:
+  print("❌ You do not have enough credits.")
 else:
-  print("You have not met either requirement.")
+  (" 🛑 You have not met either requirements for this ride.")
